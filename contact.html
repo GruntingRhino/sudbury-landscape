@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sudbury Lawn &amp; Landscape Design</title>
+  <meta name="description" content="Get in touch with Sudbury Lawn &amp; Landscape Design. Call (978) 443-4493 or send a message. Based at 9 Old County Rd, Sudbury, MA 01776." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site">
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav-brand" href="index.html">
+        Sudbury Lawn<br>&amp; Landscape
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="tel:+19784434493">
+        (978) 443-4493
+      </a>
+    </nav>
+
+    <main>
+      <div class="contact-layout">
+
+        <!-- Left: info panel -->
+        <aside class="contact-left" aria-label="Contact information">
+          <div>
+            <span class="label" style="color:rgba(255,255,255,.4);margin-bottom:36px;display:block;">Get in touch</span>
+            <h1 class="contact-hl reveal">
+              Let's talk<br>about the<br><em>property.</em>
+            </h1>
+          </div>
+
+          <div>
+            <dl class="contact-details">
+              <div class="contact-row">
+                <dt class="label">Phone</dt>
+                <dd class="contact-val">
+                  <a href="tel:+19784434493">(978) 443-4493</a>
+                </dd>
+              </div>
+              <div class="contact-row">
+                <dt class="label">Address</dt>
+                <dd class="contact-val">
+                  9 Old County Rd<br>Sudbury, MA 01776
+                </dd>
+              </div>
+              <div class="contact-row">
+                <dt class="label">Service area</dt>
+                <dd class="contact-val" style="font-size:clamp(16px,1.8vw,24px);">
+                  Sudbury and surrounding towns
+                </dd>
+              </div>
+            </dl>
+
+            <p class="body-small" style="color:rgba(255,255,255,.35);margin-top:32px;line-height:1.6;">
+              The fastest way to reach us is a direct call.<br>
+              We'll follow up on messages as quickly as possible.
+            </p>
+          </div>
+        </aside>
+
+        <!-- Right: form -->
+        <section class="contact-right" aria-labelledby="form-heading">
+          <div>
+            <h2 id="form-heading" class="subhead reveal">Send a message.</h2>
+            <p class="body-small reveal" data-delay="1" style="margin-top:12px;">
+              Tell us about the property and what you're looking to address. We'll follow up directly by phone.
+            </p>
+          </div>
+
+          <div id="formSuccess" class="form-success" role="alert" aria-live="polite">
+            Message sent — we'll be in touch by phone shortly.
+          </div>
+
+          <form
+            id="contactForm"
+            class="form-grid reveal"
+            data-delay="2"
+            novalidate
+            aria-label="Contact form"
+          >
+            <div class="form-row">
+              <div class="form-label-group">
+                <label class="form-label" for="fname">First name <span aria-hidden="true">*</span></label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="fname"
+                  name="firstName"
+                  autocomplete="given-name"
+                  required
+                  placeholder="Jane"
+                />
+              </div>
+              <div class="form-label-group">
+                <label class="form-label" for="lname">Last name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="lname"
+                  name="lastName"
+                  autocomplete="family-name"
+                  placeholder="Smith"
+                />
+              </div>
+            </div>
+
+            <div class="form-label-group">
+              <label class="form-label" for="phone">Phone <span aria-hidden="true">*</span></label>
+              <input
+                class="form-input"
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+                placeholder="(508) 000-0000"
+              />
+            </div>
+
+            <div class="form-label-group">
+              <label class="form-label" for="address">Property address</label>
+              <input
+                class="form-input"
+                type="text"
+                id="address"
+                name="address"
+                autocomplete="street-address"
+                placeholder="123 Main St, Sudbury, MA"
+              />
+            </div>
+
+            <div class="form-label-group">
+              <label class="form-label" for="message">What are you looking to address? <span aria-hidden="true">*</span></label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Describe the property and what you have in mind — a rough sketch is fine."
+              ></textarea>
+            </div>
+
+            <div>
+              <button class="btn btn-accent" type="submit">
+                Send message
+                <svg class="btn-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <p class="form-note" style="margin-top:14px;">
+                Fields marked * are required. Your information is used only to respond to your inquiry.
+              </p>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span class="footer-brand">Sudbury Lawn &amp; Landscape Design</span>
+      <span class="footer-center">9 Old County Rd, Sudbury, MA 01776</span>
+      <span class="footer-right">Draft concept · not for distribution</span>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
