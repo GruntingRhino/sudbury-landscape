@@ -201,6 +201,44 @@
     }, { passive: true });
   }
 
+  /* ─── Notes / Capabilities carousel ────────────────────────────────────── */
+  function initNotesCarousel() {
+    const items  = document.querySelectorAll('.note-item');
+    const dots   = document.querySelectorAll('.notes-dot');
+    const catVal = document.querySelector('.note-cat-val');
+    if (!items.length) return;
+
+    const categories = ['Drainage', 'Planting', 'Site Light', 'Edge Work', 'Grading'];
+    let current = 0;
+    let timer   = null;
+
+    function goTo(idx) {
+      items[current].classList.remove('active');
+      if (dots[current]) dots[current].classList.remove('active');
+      current = (idx + items.length) % items.length;
+      items[current].classList.add('active');
+      if (dots[current]) dots[current].classList.add('active');
+      if (catVal) catVal.textContent = categories[current] || '';
+    }
+
+    function start() {
+      timer = setInterval(function () { goTo(current + 1); }, 5000);
+    }
+    function stop() {
+      clearInterval(timer);
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        stop(); goTo(i); start();
+      });
+    });
+
+    if (!prefersReducedMotion) {
+      start();
+    }
+  }
+
   /* ─── Contact form (local demo — no real submission) ────────────────────── */
   function initContactForm() {
     const form = document.getElementById('contactForm');
@@ -253,12 +291,7 @@
     initParallax();
     initContactForm();
     initMobileNav();
-
-    const geoCanvas = document.getElementById('geoCanvas');
-    if (geoCanvas) drawGeoCanvas(geoCanvas, true);
-
-    const aboutCanvas = document.getElementById('aboutCanvas');
-    if (aboutCanvas) drawAboutCanvas(aboutCanvas);
+    initNotesCarousel();
   });
 
 })();

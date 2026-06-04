@@ -29,29 +29,40 @@
 
       <!-- Hero -->
       <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-kicker reveal">
-          <span class="label">Sudbury, Massachusetts</span>
-          <span class="kicker-line" aria-hidden="true"></span>
-          <span class="label">Est. locally</span>
+        <div class="hero-col-text">
+          <div class="hero-kicker reveal">
+            <span class="label">Sudbury, Massachusetts</span>
+            <span class="kicker-line" aria-hidden="true"></span>
+            <span class="label">Est. locally</span>
+          </div>
+
+          <h1 id="hero-heading" class="display reveal" data-delay="1">
+            Property<br>refined
+          </h1>
+
+          <div class="hero-bottom">
+            <p class="body-large hero-desc reveal" data-delay="2">
+              Landscape design, installation coordination, and property refinement for homes in Sudbury and surrounding communities.
+            </p>
+            <div class="hero-actions reveal" data-delay="3">
+              <a class="btn btn-accent" href="tel:+19784434493">
+                Call directly
+                <svg class="btn-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="btn btn-outline" href="contact.html">Request a consult</a>
+            </div>
+          </div>
         </div>
 
-        <h1 id="hero-heading" class="display reveal" data-delay="1">
-          Land.<br>Considered.
-        </h1>
-
-        <div class="hero-bottom">
-          <p class="body-large hero-desc reveal" data-delay="2">
-            Landscape design, installation coordination, and property refinement for homes in Sudbury and surrounding communities.
-          </p>
-          <div class="hero-actions reveal" data-delay="3">
-            <a class="btn btn-accent" href="tel:+19784434493">
-              Call directly
-              <svg class="btn-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a class="btn btn-outline" href="contact.html">Request a consult</a>
-          </div>
+        <div class="hero-col-image" aria-hidden="true">
+          <img
+            src="assets/landscape-3.jpg"
+            alt=""
+            class="hero-photo scale-reveal"
+            loading="eager"
+          >
         </div>
       </section>
 
@@ -156,12 +167,52 @@
         </div>
       </section>
 
+      <!-- Site Notes / Capabilities carousel -->
+      <section class="notes-section" aria-labelledby="notes-heading">
+        <div class="notes-inner">
+          <div class="notes-header">
+            <span class="label reveal-left">02 / Site Notes &amp; Capabilities</span>
+            <div class="notes-dots" aria-hidden="true">
+              <span class="notes-dot active" data-idx="0"></span>
+              <span class="notes-dot" data-idx="1"></span>
+              <span class="notes-dot" data-idx="2"></span>
+              <span class="notes-dot" data-idx="3"></span>
+              <span class="notes-dot" data-idx="4"></span>
+            </div>
+          </div>
+          <h2 id="notes-heading" class="sr-only">Site notes and capabilities</h2>
+          <div class="notes-stage" role="region" aria-live="polite" aria-atomic="true">
+            <div class="note-item active">
+              <p class="note-num label">01</p>
+              <p class="note-text">Hardscape first — a site that drains well and sits at proper grade is the foundation everything else builds on.</p>
+            </div>
+            <div class="note-item">
+              <p class="note-num label">02</p>
+              <p class="note-text">Plant selection weighted toward native and climate-adapted varieties that perform through Massachusetts winters without intensive intervention.</p>
+            </div>
+            <div class="note-item">
+              <p class="note-num label">03</p>
+              <p class="note-text">Every planting scheme mapped against seasonal light — what shades what, what shows in early spring versus late fall.</p>
+            </div>
+            <div class="note-item">
+              <p class="note-num label">04</p>
+              <p class="note-text">Edge definition is structure. Where lawn meets bed, where stone meets grade — these transitions carry as much visual weight as the plantings themselves.</p>
+            </div>
+            <div class="note-item">
+              <p class="note-num label">05</p>
+              <p class="note-text">Drainage resolved at grade, not corrected afterward with buried pipe. Slope assessment precedes all design work.</p>
+            </div>
+          </div>
+          <p class="note-category label">Capability — <span class="note-cat-val">Drainage</span></p>
+        </div>
+      </section>
+
       <!-- Approach -->
       <section class="section-full" aria-labelledby="approach-heading">
         <div class="approach-block" style="max-width:var(--max);margin:0 auto;">
           <div class="approach-copy">
             <div>
-              <span class="label reveal">02 / Approach</span>
+              <span class="label reveal">03 / Approach</span>
               <h2 id="approach-heading" class="approach-statement reveal" data-delay="1">
                 Less decoration. More structure and durable proportion.
               </h2>
@@ -182,7 +233,12 @@
             </ul>
           </div>
           <div class="approach-visual" aria-hidden="true">
-            <canvas class="geo-canvas" id="geoCanvas"></canvas>
+            <img
+              src="assets/landscape-2.jpg"
+              alt=""
+              class="approach-photo scale-reveal"
+              loading="lazy"
+            >
           </div>
         </div>
       </section>
